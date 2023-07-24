@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "fafC2eoOCCIplamzq3u52NSznHMkIHJVCxQ1zKBqWkedrIe80S3gmfhRGEaEZZ9V1O6MH5X38EwVm313IWzsPg==",
+  "success": true,
+  "projectFilePath": "C:\\DESARROLLO\\CURSO_XAMARIN\\tallerAPP\\TallerApp\\TallerApp.iOS\\TallerApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jbetancur\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\jbetancur\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\jbetancur\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
