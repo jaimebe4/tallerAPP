@@ -26,6 +26,7 @@ external-cache-path;C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.An
 external-path;C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\lp\53\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\130\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\130\res\mipmap-anydpi-v26\icon_round.xml
+FrameLayout;C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\lp\104\jl\res\layout\camerafragment.xml
 FrameLayout;C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\lp\54\jl\res\layout\bottomtablayout.xml
 item;C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\lp\54\jl\res\values\styles.xml
 LinearLayout;C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\lp\54\jl\res\layout\bottomtablayout.xml
@@ -46,5 +47,6 @@ translate;C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\
 translate;C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\lp\54\jl\res\anim\enterfromright.xml
 translate;C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\lp\54\jl\res\anim\exittoleft.xml
 translate;C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\lp\54\jl\res\anim\exittoright.xml
+xamarin.communitytoolkit.ui.views.AutoFitTextureView;C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\lp\104\jl\res\layout\camerafragment.xml
 xamarin.forms.platform.android.appcompat.FormsViewPager;C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\lp\54\jl\res\layout\rootlayout.xml
 xamarin.forms.platform.android.ShellFlyoutLayout;C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\lp\54\jl\res\layout\flyoutcontent.xml

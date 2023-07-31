@@ -1,5 +1,5 @@
-﻿using System;
-using TallerApp.Services;
+﻿using TallerApp;
+using System;
 using TallerApp.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,8 +12,8 @@ namespace TallerApp
         public App()
         {
             InitializeComponent();
+            Startup.Initialize();
 
-            DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }
 

@@ -6,13 +6,15 @@
              xmlns:viewModels="clr-namespace:TallerApp.ViewModels"
              mc:Ignorable="d"
              x:Class="TallerApp.Views.LoginPage"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             xmlns:local="clr-namespace:TallerApp;assembly=TallerApp">
     <ContentPage.BindingContext>
         <viewModels:LoginViewModel/>
     </ContentPage.BindingContext >
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
 
+            <Image Source="{local:ImageResource TallerApp.Resources.Images.logotaller.jpg}" WidthRequest="200" HeightRequest="200" />
             <Entry Text="{Binding Username}" Placeholder="Ingrese su usuario" Margin="10"/>
             <Entry Text="{Binding Password}" Placeholder="Ingrese su password" IsPassword="True" Margin="10"/>
 
