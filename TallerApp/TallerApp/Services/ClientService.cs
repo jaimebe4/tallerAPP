@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using TallerApp.Data.API;
 using TallerApp.Services;
 
-namespace DiegoApp.Services
+namespace TallerApp.Services
 {
     public class ClientService : IClientService
     {
