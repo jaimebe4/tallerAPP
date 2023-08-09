@@ -5,5 +5,7 @@
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
     <ActiveDebugProfile>Pixel 2 - API 29 %28Android 10.0 - API 29%29</ActiveDebugProfile>
     <DefaultDevice>pixel_2_-_api_29</DefaultDevice>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>
