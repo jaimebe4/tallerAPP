@@ -67,6 +67,7 @@ C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\res\drawable\xamarin_logo.png
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\res\drawable\icon_about.png
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\res\drawable\icon_feed.png
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\res\drawable\motorcycle.jpg
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\uploadflags.txt
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\resolvedassemblies.hash
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\android\assets\Autofac.dll
@@ -702,4 +703,3 @@ C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\res\drawable\motorcycle.jpg
