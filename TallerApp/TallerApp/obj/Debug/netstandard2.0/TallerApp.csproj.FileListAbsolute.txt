@@ -7,6 +7,8 @@ C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\Views\ClientsPage.xaml.g.cs
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\Views\ServicesPage.xaml.g.cs
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\Views\VehiclesPage.xaml.g.cs
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\TallerApp.AssemblyInfoInputs.cache
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\TallerApp.AssemblyInfo.cs
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\TallerApp.csproj.CoreCompileInputs.cache

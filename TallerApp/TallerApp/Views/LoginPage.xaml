@@ -17,7 +17,7 @@
             <Image Source="{local:ImageResource TallerApp.Resources.Images.logotaller.jpg}" WidthRequest="200" HeightRequest="200"/>
             <Entry Text="{Binding UserName}" Placeholder="{Static resx:AppResources.LoginPageUserNameText}" Margin="10" TextColor="Black"/>
             <Entry Text="{Binding Password}" Placeholder="{Static resx:AppResources.LoginPagePasswordText}" IsPassword="True" Margin="10" TextColor="Black"/>
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}" CornerRadius="10" FontAttributes="Bold" Margin="32"/>
             <!--<Label Text="{Binding WelcomeMessage}" FontSize="Subtitle" TextColor="{Binding MessageColor}" HorizontalOptions="Center" Margin="0,30,0,0" IsVisible="{Binding ShowMessage}"/>-->
         </StackLayout>
     </ContentPage.Content>

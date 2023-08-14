@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             x:Class="TallerApp.Views.VehiclesPage">
+    <ContentPage.Content>
+        <StackLayout Background="#f6f6f6"
+                     Margin="16">
+            <Label x:Name="lbl_principal" 
+                   Text="Registro de Vehiculo" 
+                   FontSize="Medium"
+                   Margin="8"
+                   FontAttributes="Bold"
+                   />
+            <ProgressBar x:Name="progress" 
+                         Progress=".5"/>
+            <Grid>
+                <Label x:Name="lbl_progress" 
+                       Text="0%" 
+                       FontSize="Large"
+                       TextColor="#6c7a86"/>
+                <Switch x:Name="sw_example" 
+                        IsToggled="False"
+                        Toggled="sw_example_Toggled"/>
+            </Grid>
+            <Frame Margin="8"
+                   BackgroundColor="White">
+                <StackLayout>
+                    <Picker
+                        x:Name="pkr_vehicleType"
+                        Title="Tipo Vehiculo"
+                        FontSize="Medium"
+                        d:SelectedIndexChanged="lbl_vehicleType_Completed">
+                        <Picker.Items>
+                            <x:String>Automovil</x:String>
+                            <x:String>Motocicleta</x:String>
+                            <x:String>Bicicleta</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <Entry x:Name="lbl_vehicleName"
+                           Placeholder="Nombre"
+                           FontSize="Medium"
+                           Completed="lbl_vehicleName_Completed"
+                           TextChanged="lbl_vehicleName_TextChanged"/>
+                    <Entry x:Name="lbl_vehicleBrand"
+                           Placeholder="Marca"
+                           FontSize="Medium"
+                           Completed="lbl_vehicleBrand_Completed"/>
+                    <Entry x:Name="lbl_vehicleModel"
+                           Placeholder="Modelo"
+                           FontSize="Medium"
+                           Completed="lbl_vehicleModel_Completed"/>
+                    <Entry x:Name="lbl_vehiclePlaque"
+                           Placeholder="Placa/Matricula"
+                           FontSize="Medium"
+                           Completed="lbl_vehiclePlaque_Completed"/>
+                    <Grid ColumnDefinitions="auto,*">
+                        <CheckBox x:Name="cbox_activate"
+                                  IsChecked="False"
+                                  CheckedChanged="cbox_activate_CheckedChanged"
+                                  Grid.Column="0"/>
+                        <Label Text="Activar Vehículo"
+                               Grid.Column="1"
+                               VerticalOptions="Center"/>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+            <Button x:Name="btn_register"
+                    Text="Registrar"
+                    FontSize="Large"
+                    CornerRadius="10"
+                    IsEnabled="False"
+                    FontAttributes="Bold"
+                    Padding="8"
+                    Margin="32"
+                    BorderWidth="2"
+                    Clicked="btn_registrar_Clicked"
+                    />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
