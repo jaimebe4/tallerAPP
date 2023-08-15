@@ -13,7 +13,7 @@
                    FontAttributes="Bold"
                    />
             <ProgressBar x:Name="progress" 
-                         Progress=".5"/>
+                         Progress=".1"/>
             <Grid>
                 <Label x:Name="lbl_progress" 
                        Text="0%" 

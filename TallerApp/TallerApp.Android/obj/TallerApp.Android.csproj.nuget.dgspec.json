@@ -52,6 +52,14 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microcharts": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
+            },
+            "Microcharts.Forms": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
+            },
             "Refit": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -130,6 +138,14 @@
             "Autofac.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microcharts": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
+            },
+            "Microcharts.Forms": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

@@ -84,3 +84,9 @@ C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\T
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\obj\iPhone\Debug\TallerApp.iOS.csproj.CopyComplete
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\obj\iPhone\Debug\TallerApp.iOS.exe
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\obj\iPhone\Debug\TallerApp.iOS.pdb
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Microcharts.dll
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Microcharts.iOS.dll
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\SkiaSharp.dll
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\SkiaSharp.Views.iOS.dll
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Microcharts.Forms.dll
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\SkiaSharp.Views.Forms.dll
