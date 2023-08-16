@@ -725,3 +725,7 @@ C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\android\src\crc64bb223c2be3a01e03\SKCanvasViewRendererBase_2.java
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\android\src\crc64bb223c2be3a01e03\SKGLViewRenderer.java
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\android\src\crc64bb223c2be3a01e03\SKGLViewRendererBase_2.java
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\res\drawable\icon_vehicle.png
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\res\drawable\icon_report.png
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\res\drawable\icon_service.png
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\res\drawable\icon_logout.png
