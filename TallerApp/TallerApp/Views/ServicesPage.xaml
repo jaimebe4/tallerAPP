@@ -28,11 +28,14 @@
                         <Picker
                         x:Name="pkr_serviceVehicle"
                         Title="Vehiculo"
-                        FontSize="Medium">
+                        FontSize="Medium"
+                        d:SelectedIndexChanged="pkr_serviceVehicle_Completed">
                         </Picker>
-                        <DatePicker/>
-                        <Entry Placeholder="Hora"
-                           Keyboard="Numeric">
+                        <DatePicker x:Name="pkr_serviceDate"/>
+                        <Entry x:Name="lbl_serviceHour"
+                           Placeholder="Hora"
+                           Keyboard="Numeric"
+                           Completed="lbl_serviceHour_Completed">
                             <Entry.Behaviors>
                                 <xct:MaskedBehavior 
                                 Mask="xx:xx" 
@@ -42,11 +45,15 @@
                         <Entry x:Name="lbl_serviceKm"
                            Placeholder="Kilometraje"
                            FontSize="Medium"
-                           Keyboard="Numeric"/>
+                           Keyboard="Numeric"
+                           Completed="lbl_serviceKm_Completed"
+                           IsEnabled="False"/>
                         <Picker
                         x:Name="pkr_serviceType"
                         Title="Tipo de Servicio"
-                        FontSize="Medium">
+                        FontSize="Medium"
+                        d:SelectedIndexChanged="pkr_serviceType_Completed"
+                        IsEnabled="False">
                             <Picker.Items>
                                 <x:String>Reabastecimiento</x:String>
                                 <x:String>Servicio Básico</x:String>
@@ -57,16 +64,21 @@
                         </Picker>
                         <Entry x:Name="lbl_serviceLocal"
                            Placeholder="Local"
-                           FontSize="Medium"/>
+                           FontSize="Medium"
+                           Completed="lbl_serviceLocal_Completed"
+                           IsEnabled="False"/>
                         <Entry x:Name="lbl_servicePrice" 
                            Keyboard="Numeric" 
                            HorizontalOptions="StartAndExpand" 
                            WidthRequest="600" 
                            Placeholder="Precio"
-                           TextChanged="Entry_TextChanged"></Entry>
+                           Completed="lbl_servicePrice_Completed"
+                           IsEnabled="False"/>
                         <Entry x:Name="lbl_serviceNotes"
                            Placeholder="Notas"
-                           FontSize="Medium"/>
+                           FontSize="Medium"
+                           Completed="lbl_serviceNotes_Completed"
+                           IsEnabled="False"/>
                     </StackLayout>
                 </Frame>
                 <Button x:Name="btn_register"
@@ -78,6 +90,7 @@
                     Padding="8"
                     Margin="32"
                     BorderWidth="2"
+                    Clicked="btn_registrar_Clicked"
                     />
             </StackLayout>
         </ScrollView>

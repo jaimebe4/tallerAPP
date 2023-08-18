@@ -42,7 +42,7 @@ namespace TallerApp
                 .ConfigureHttpClient(c => c.BaseAddress = new Uri(Settings.ApiBaseUri))
                 .AddHttpMessageHandler<BaseAddressHandler>();
 
-            serviceCollection.AddRefitClient<IVehicle>(refitSettings)
+            serviceCollection.AddRefitClient<IVehicleApi>(refitSettings)
                 .ConfigureHttpClient(c => c.BaseAddress = new Uri(Settings.ApiBaseUri))
                 .AddHttpMessageHandler<BaseAddressHandler>();
 

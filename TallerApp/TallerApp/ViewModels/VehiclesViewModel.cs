@@ -39,12 +39,12 @@ namespace TallerApp.ViewModels
             _vehicleService = vehicleService;
         }
 
-        public ICommand AppearingCommand { get; set; }
+        //public ICommand AppearingCommand { get; set; }
 
-        //private async Task OnAppearingAsync()
-        //{
-        //    await LoadData();
-        //}
+        ////private async Task OnAppearingAsync()
+        ////{
+        ////    await LoadData();
+        ////}
 
 
 

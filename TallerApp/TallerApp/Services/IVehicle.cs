@@ -14,7 +14,7 @@ namespace TallerApp.Data.API
         Task<HttpResponseMessage> PostCrearVehiculoAsync(Vehicle vehicle);
 
 
-        [Post("/GastoFijo/PostObtenerGastosFijos")]
-        Task<HttpResponseMessage> PostObtenerGastosFijosAsync();
+        [Post("/Vehicles/PostObtenerVehiculos")]
+        Task<HttpResponseMessage> PostObtenerVehiculosAsync();
     }
 }

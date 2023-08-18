@@ -16,6 +16,9 @@ C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\T
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\TallerApp.iOS.pdb
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Autofac.dll
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Autofac.Extensions.DependencyInjection.dll
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Microcharts.dll
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Microcharts.iOS.dll
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Microcharts.Forms.dll
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Microsoft.Extensions.DependencyInjection.dll
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
@@ -28,6 +31,9 @@ C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\N
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Refit.dll
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Refit.HttpClientFactory.dll
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Refit.Newtonsoft.Json.dll
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\SkiaSharp.dll
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\SkiaSharp.Views.iOS.dll
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\SkiaSharp.Views.Forms.dll
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\System.Buffers.dll
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\System.Memory.dll
@@ -84,9 +90,3 @@ C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\T
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\obj\iPhone\Debug\TallerApp.iOS.csproj.CopyComplete
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\obj\iPhone\Debug\TallerApp.iOS.exe
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\obj\iPhone\Debug\TallerApp.iOS.pdb
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Microcharts.dll
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Microcharts.iOS.dll
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\SkiaSharp.dll
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\SkiaSharp.Views.iOS.dll
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\Microcharts.Forms.dll
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.iOS\bin\iPhone\Debug\SkiaSharp.Views.Forms.dll
