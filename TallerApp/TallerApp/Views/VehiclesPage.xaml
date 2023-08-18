@@ -2,7 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             x:Class="TallerApp.Views.VehiclesPage">
+             x:Class="TallerApp.Views.VehiclesPage"
+             xmlns:viewModels="clr-namespace:TallerApp.ViewModels"
+             xmlns:models="clr-namespace:TallerApp.Data.Models"
+             xmlns:controls="clr-namespace:TallerApp.Controls"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:DataType="viewModels:VehiclesViewModel"
+             
+             >
     <ContentPage.Content>
         <StackLayout Background="#f6f6f6"
                      Margin="16">
@@ -30,7 +37,8 @@
                         x:Name="pkr_vehicleType"
                         Title="Tipo Vehiculo"
                         FontSize="Medium"
-                        d:SelectedIndexChanged="lbl_vehicleType_Completed">
+                        d:SelectedIndexChanged="lbl_vehicleType_Completed"
+                        SelectedItem="{Binding VehicleType}">
                         <Picker.Items>
                             <x:String>Automovil</x:String>
                             <x:String>Motocicleta</x:String>
@@ -41,19 +49,23 @@
                            Placeholder="Nombre"
                            FontSize="Medium"
                            Completed="lbl_vehicleName_Completed"
-                           TextChanged="lbl_vehicleName_TextChanged"/>
+                           TextChanged="lbl_vehicleName_TextChanged"
+                           Text="{Binding VehicleName}"/>
                     <Entry x:Name="lbl_vehicleBrand"
                            Placeholder="Marca"
                            FontSize="Medium"
-                           Completed="lbl_vehicleBrand_Completed"/>
+                           Completed="lbl_vehicleBrand_Completed"
+                           Text="{Binding VehicleBrand}"/>
                     <Entry x:Name="lbl_vehicleModel"
                            Placeholder="Modelo"
                            FontSize="Medium"
-                           Completed="lbl_vehicleModel_Completed"/>
+                           Completed="lbl_vehicleModel_Completed"
+                           Text="{Binding VehicleModel}"/>
                     <Entry x:Name="lbl_vehiclePlaque"
                            Placeholder="Placa/Matricula"
                            FontSize="Medium"
-                           Completed="lbl_vehiclePlaque_Completed"/>
+                           Completed="lbl_vehiclePlaque_Completed"
+                           Text="{Binding VehiclePlaque}"/>
                     <Grid ColumnDefinitions="auto,*">
                         <CheckBox x:Name="cbox_activate"
                                   IsChecked="False"
@@ -74,6 +86,7 @@
                     Padding="8"
                     Margin="32"
                     BorderWidth="2"
+                    Command="{Binding LoginCommand}"
                     Clicked="btn_registrar_Clicked"
                     />
         </StackLayout>

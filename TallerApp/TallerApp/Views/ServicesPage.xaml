@@ -5,65 +5,71 @@
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design">
     <ContentPage.Content>
-        <StackLayout Background="#f6f6f6"
+        <ScrollView>
+            <StackLayout Background="#f6f6f6"
                      Margin="16">
-            <Label x:Name="lbl_principal" 
+                <Label x:Name="lbl_principal" 
                    Text="Registro de Servicio" 
                    FontSize="Medium"
                    Margin="8"
                    FontAttributes="Bold"
                    />
-            <ProgressBar x:Name="progress" 
+                <ProgressBar x:Name="progress" 
                          Progress=".1"/>
-            <Grid>
-                <Label x:Name="lbl_progress" 
+                <Grid>
+                    <Label x:Name="lbl_progress" 
                        Text="0%" 
                        FontSize="Large"
                        TextColor="#6c7a86"/>
-            </Grid>
-            <Frame Margin="8"
+                </Grid>
+                <Frame Margin="8"
                    BackgroundColor="White">
-                <StackLayout>
-                    <DatePicker/>
-                    <Entry Placeholder="Hora"
+                    <StackLayout>
+                        <Picker
+                        x:Name="pkr_serviceVehicle"
+                        Title="Vehiculo"
+                        FontSize="Medium">
+                        </Picker>
+                        <DatePicker/>
+                        <Entry Placeholder="Hora"
                            Keyboard="Numeric">
-                        <Entry.Behaviors>
-                            <xct:MaskedBehavior 
+                            <Entry.Behaviors>
+                                <xct:MaskedBehavior 
                                 Mask="xx:xx" 
                                 UnMaskedCharacter="x"/>
-                        </Entry.Behaviors>
-                    </Entry>
-                    <Entry x:Name="lbl_serviceKm"
+                            </Entry.Behaviors>
+                        </Entry>
+                        <Entry x:Name="lbl_serviceKm"
                            Placeholder="Kilometraje"
                            FontSize="Medium"
                            Keyboard="Numeric"/>
-                    <Picker
+                        <Picker
                         x:Name="pkr_serviceType"
                         Title="Tipo de Servicio"
                         FontSize="Medium">
-                        <Picker.Items>
-                            <x:String>Reabastecimiento</x:String>
-                            <x:String>Servicio Básico</x:String>
-                            <x:String>Mantenimiento</x:String>
-                            <x:String>Mano de Obra</x:String>
-                            <x:String>Repuestos</x:String>
-                        </Picker.Items>
-                    </Picker>
-                    <Entry x:Name="lbl_serviceLocal"
+                            <Picker.Items>
+                                <x:String>Reabastecimiento</x:String>
+                                <x:String>Servicio Básico</x:String>
+                                <x:String>Mantenimiento</x:String>
+                                <x:String>Mano de Obra</x:String>
+                                <x:String>Repuestos</x:String>
+                            </Picker.Items>
+                        </Picker>
+                        <Entry x:Name="lbl_serviceLocal"
                            Placeholder="Local"
                            FontSize="Medium"/>
-                    <Entry x:Name="lbl_servicePrice" 
+                        <Entry x:Name="lbl_servicePrice" 
                            Keyboard="Numeric" 
                            HorizontalOptions="StartAndExpand" 
                            WidthRequest="600" 
                            Placeholder="Precio"
                            TextChanged="Entry_TextChanged"></Entry>
-                    <Entry x:Name="lbl_serviceNotes"
+                        <Entry x:Name="lbl_serviceNotes"
                            Placeholder="Notas"
                            FontSize="Medium"/>
-                </StackLayout>
-            </Frame>
-            <Button x:Name="btn_register"
+                    </StackLayout>
+                </Frame>
+                <Button x:Name="btn_register"
                     Text="Registrar"
                     FontSize="Large"
                     CornerRadius="10"
@@ -73,6 +79,7 @@
                     Margin="32"
                     BorderWidth="2"
                     />
-        </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
