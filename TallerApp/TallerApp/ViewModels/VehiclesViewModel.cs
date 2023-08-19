@@ -33,7 +33,7 @@ namespace TallerApp.ViewModels
 
         public VehiclesViewModel(IVehicleService vehicleService)
         {
-            AppearingCommand = new AsyncCommand(async () => await OnAppearingAsync());
+            //AppearingCommand = new AsyncCommand(async () => await OnAppearingAsync());
             LoginCommand = new Command(OnLoginClicked);
             Title = "Vehiculos";
             _vehicleService = vehicleService;
@@ -41,27 +41,28 @@ namespace TallerApp.ViewModels
 
         public ICommand AppearingCommand { get; set; }
 
-        private async Task OnAppearingAsync()
-        {
-            await LoadData();
-        }
+        
+        //private async Task OnAppearingAsync()
+        //{
+          //  await LoadData();
+        //}
 
-        private async Task LoadData()
-        {
-            try
-            {
-                IsBusy = true;
+        //private async Task LoadData()
+        //{
+        //    try
+        //    {
+        //        IsBusy = true;
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-            }
-            finally
-            {
-                IsBusy = false;
-            }
-        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        var message = ex.Message;
+        //    }
+        //    finally
+        //    {
+        //        IsBusy = false;
+        //    }
+        //}
 
 
 

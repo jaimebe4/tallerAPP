@@ -5,7 +5,7 @@
              xmlns:viewModels="clr-namespace:TallerApp.ViewModels"
              xmlns:utility="clr-namespace:TallerApp.Helpers" 
              utility:ViewModelLocator.AutoWireViewModel="True"
-             x:DataType="viewModels:VehiclesViewModel"
+             x:DataType="viewModels:StoriesViewModel"
              x:Class="TallerApp.Views.StoriesPage"
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              >
@@ -37,14 +37,19 @@
                         x:Name="pkr_serviceVehicle"
                         Title="Vehiculo"
                         FontSize="Medium"
-                        d:SelectedIndexChanged="pkr_serviceVehicle_Completed">
+                        d:SelectedIndexChanged="pkr_serviceVehicle_Completed"
+                        ItemsSource="{Binding Vehicles}"
+                        ItemDisplayBinding="{Binding VehicleName}"
+                        SelectedItem="{Binding Vehicle}">
                         </Picker>
                         <DatePicker x:Name="pkr_serviceDate"
-                                    Background="white"/>
+                                    Background="white"
+                                    Date="{Binding StorieDate}"/>
                         <Entry x:Name="lbl_serviceHour"
                            Placeholder="Hora"
                            Keyboard="Numeric"
-                           Completed="lbl_serviceHour_Completed">
+                           Completed="lbl_serviceHour_Completed"
+                           Text="{Binding StorieHour}">
                             <Entry.Behaviors>
                                 <xct:MaskedBehavior 
                                 Mask="xx:xx" 
@@ -56,13 +61,15 @@
                            FontSize="Medium"
                            Keyboard="Numeric"
                            Completed="lbl_serviceKm_Completed"
-                           IsEnabled="False"/>
+                           IsEnabled="False"
+                           Text="{Binding StorieKM}"/>
                         <Picker
                         x:Name="pkr_serviceType"
                         Title="Tipo de Servicio"
                         FontSize="Medium"
                         d:SelectedIndexChanged="pkr_serviceType_Completed"
-                        IsEnabled="False">
+                        IsEnabled="False"
+                        SelectedItem="{Binding StorieType}">
                             <Picker.Items>
                                 <x:String>Reabastecimiento</x:String>
                                 <x:String>Servicio Básico</x:String>
@@ -75,19 +82,22 @@
                            Placeholder="Local"
                            FontSize="Medium"
                            Completed="lbl_serviceLocal_Completed"
-                           IsEnabled="False"/>
+                           IsEnabled="False"
+                           Text="{Binding StorieLocal}"/>
                         <Entry x:Name="lbl_servicePrice" 
                            Keyboard="Numeric" 
                            HorizontalOptions="StartAndExpand" 
                            WidthRequest="600" 
                            Placeholder="Precio"
                            Completed="lbl_servicePrice_Completed"
-                           IsEnabled="False"/>
+                           IsEnabled="False"
+                           Text="{Binding StoriePrice}"/>
                         <Entry x:Name="lbl_serviceNotes"
                            Placeholder="Notas"
                            FontSize="Medium"
                            Completed="lbl_serviceNotes_Completed"
-                           IsEnabled="False"/>
+                           IsEnabled="False"
+                           Text="{Binding StorieNotes}"/>
                     </StackLayout>
                 </Frame>
                 <Button x:Name="btn_register"
