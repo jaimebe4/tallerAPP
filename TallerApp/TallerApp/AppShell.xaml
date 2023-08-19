@@ -96,7 +96,7 @@
         <ShellContent Route="VehiclesPage" ContentTemplate="{DataTemplate local:VehiclesPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Servicios" Icon="icon_service.png">
-        <ShellContent Route="VehiclesPage" ContentTemplate="{DataTemplate local:ServicesPage}" />
+        <ShellContent Route="StoriesPage" ContentTemplate="{DataTemplate local:StoriesPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Reportes" Icon="icon_report.png">
         <ShellContent Route="ReportsPage" ContentTemplate="{DataTemplate local:ReportsPage}" />

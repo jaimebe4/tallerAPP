@@ -33,18 +33,35 @@ namespace TallerApp.ViewModels
 
         public VehiclesViewModel(IVehicleService vehicleService)
         {
-            //AppearingCommand = new AsyncCommand(async () => await OnAppearingAsync());
+            AppearingCommand = new AsyncCommand(async () => await OnAppearingAsync());
             LoginCommand = new Command(OnLoginClicked);
             Title = "Vehiculos";
             _vehicleService = vehicleService;
         }
 
-        //public ICommand AppearingCommand { get; set; }
+        public ICommand AppearingCommand { get; set; }
 
-        ////private async Task OnAppearingAsync()
-        ////{
-        ////    await LoadData();
-        ////}
+        private async Task OnAppearingAsync()
+        {
+            await LoadData();
+        }
+
+        private async Task LoadData()
+        {
+            try
+            {
+                IsBusy = true;
+
+            }
+            catch (Exception ex)
+            {
+                var message = ex.Message;
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
 
 
 
@@ -58,6 +75,7 @@ namespace TallerApp.ViewModels
                 vehicle.VehicleModel = Convert.ToInt16(VehicleModel);
                 vehicle.VehicleType = VehicleType;
                 vehicle.VehicleName = VehicleName;
+                vehicle.VehiclePlaque = VehiclePlaque;
 
                 long vehiculos = await _vehicleService.PostCrearVehiculoAsync(vehicle);
                 if (vehiculos == 0)

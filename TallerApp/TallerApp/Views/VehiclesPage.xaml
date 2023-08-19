@@ -3,11 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:viewModels="clr-namespace:TallerApp.ViewModels"
-             xmlns:models="clr-namespace:TallerApp.Data.Models"
              xmlns:utility="clr-namespace:TallerApp.Helpers" 
-             xmlns:controls="clr-namespace:TallerApp.Controls"
              utility:ViewModelLocator.AutoWireViewModel="True"
-             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:DataType="viewModels:VehiclesViewModel"
              x:Class="TallerApp.Views.VehiclesPage"
              >
