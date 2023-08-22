@@ -62,6 +62,7 @@ namespace TallerApp.ViewModels
         public ICommand AppearingCommand { get; set; }
 
         public ObservableRangeCollection<Vehicle> Vehicles { get; set; } = new ObservableRangeCollection<Vehicle>();
+        public ObservableRangeCollection<Storie> Stories { get; set; } = new ObservableRangeCollection<Storie>();
 
         private async Task OnAppearingAsync()
         {
@@ -79,6 +80,11 @@ namespace TallerApp.ViewModels
                 {
                     Vehicles.ReplaceRange(vehicles);
                 }
+                //var stories = await _storieService.PostObtenerHistoriasAsync();
+                //if (stories != null)
+                //{
+                //    Stories.ReplaceRange(stories);
+                //}
 
             }
             catch (Exception ex)

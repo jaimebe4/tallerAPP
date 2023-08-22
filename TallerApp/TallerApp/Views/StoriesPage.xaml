@@ -8,6 +8,7 @@
              x:DataType="viewModels:StoriesViewModel"
              x:Class="TallerApp.Views.StoriesPage"
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
              >
     <ContentPage.Behaviors>
         <xct:EventToCommandBehavior EventName="Appearing" Command="{Binding AppearingCommand}"/>

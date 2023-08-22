@@ -1,3 +1,7 @@
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\bin\Debug\netstandard2.0\TallerApp.deps.json
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\bin\Debug\netstandard2.0\TallerApp.dll
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\bin\Debug\netstandard2.0\ref\TallerApp.dll
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\bin\Debug\netstandard2.0\TallerApp.pdb
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\TallerApp.csproj.AssemblyReference.cache
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\TallerApp.Resx.AppResources.resources
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\TallerApp.csproj.GenerateResource.cache
@@ -8,16 +12,12 @@ C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\Views\ClientsPage.xaml.g.cs
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\Views\ReportsPage.xaml.g.cs
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\Views\StoriesPage.xaml.g.cs
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\Views\VehiclesPage.xaml.g.cs
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\TallerApp.AssemblyInfoInputs.cache
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\TallerApp.AssemblyInfo.cs
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\TallerApp.csproj.CoreCompileInputs.cache
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\TallerApp.dll
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\refint\TallerApp.dll
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\TallerApp.pdb
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\bin\Debug\netstandard2.0\TallerApp.deps.json
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\bin\Debug\netstandard2.0\TallerApp.dll
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\bin\Debug\netstandard2.0\ref\TallerApp.dll
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\bin\Debug\netstandard2.0\TallerApp.pdb
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\XamlC.stamp
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\Views\StoriesPage.xaml.g.cs

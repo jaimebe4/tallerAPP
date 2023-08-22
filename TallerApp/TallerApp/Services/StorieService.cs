@@ -1,5 +1,6 @@
 ﻿using TallerApp.Data.API;
 using TallerApp.Data.Models;
+using TallerApp.Data.Models.Dto;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -37,10 +38,10 @@ namespace TallerApp.Services
             return 1;
         }
 
-        public async Task<List<Storie>> PostObtenerHistoriasAsync()
+        public async Task<List<StoriesDto>> PostObtenerHistoriasAsync()
         {
-            var stories = new List<Storie>();
-            var ResultStories = new ResultStories();
+            var listaStories = new List<StoriesDto>();
+            var ResultStoriesDto = new ResultStoriesDto();
             try
             {
                 var response = await _storieApi.PostObtenerHistoriasAsync();
@@ -49,20 +50,20 @@ namespace TallerApp.Services
                 {
                     var content = await response.Content.ReadAsStringAsync();
 
-                    ResultStories = JsonConvert.DeserializeObject<ResultStories>(content);
-                    if (ResultStories.value != null)
+                    ResultStoriesDto = JsonConvert.DeserializeObject<ResultStoriesDto>(content);
+                    if (ResultStoriesDto.value != null)
                     {
-                        stories = ResultStories.value.ToList();
+                        listaStories = ResultStoriesDto.value.ToList();
                     }
                 }
 
-                return stories;
+                return listaStories;
             }
             catch (Exception ex)
             {
                 var error = ex.Message;
             }
-            return stories;
+            return listaStories;
         }
 
 

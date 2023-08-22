@@ -1,24 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:viewModels="clr-namespace:TallerApp.ViewModels"
+             xmlns:utility="clr-namespace:TallerApp.Helpers" 
+             utility:ViewModelLocator.AutoWireViewModel="True"
+             x:DataType="viewModels:ReportsViewModel"
              x:Class="TallerApp.Views.ReportsPage"
-             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms">
-    <ContentPage.Content>
-        <StackLayout Background="#f6f6f6"
-                     Margin="16">
-            <Label x:Name="lbl_principal" 
-                   Text="Reporte de Servicios" 
-                   FontSize="Medium"
-                   Margin="8"
-                   FontAttributes="Bold"
-                   />
-            <ScrollView>
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:models="clr-namespace:TallerApp.Data.Models"
+             xmlns:controls="clr-namespace:TallerApp.Controls">
+    <ContentPage.Behaviors>
+        <xct:EventToCommandBehavior EventName="Appearing" Command="{Binding AppearingCommand}"/>
+    </ContentPage.Behaviors>
+    <ContentPage.Resources>
+        <ResourceDictionary >
+            <DataTemplate x:DataType="models:Dto.StoriesDto"
+                x:Key="ClientDefaultTemplate">
                 <StackLayout>
-                    <microcharts:ChartView x:Name="charViewBar" HeightRequest="300"/>
-                    <microcharts:ChartView x:Name="charViewPie" HeightRequest="300"/>
-                    <microcharts:ChartView x:Name="charViewLine" HeightRequest="300"/>
+                    <Frame CornerRadius="7" BackgroundColor="IndianRed">
+                        <Grid  Margin="0" Padding="0" ColumnDefinitions="30*,70*" RowDefinitions="*,*,*,*,*">
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="0" Text="{Binding StorieDate}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="0" FontAttributes="Bold" Text="Tipo Pago:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="1" FontAttributes="Bold" Text="Subtipo:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="1" Text="{Binding StorieHour}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="2" FontAttributes="Bold" Text="Descripción:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="2" Text="{Binding StorieType}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="3" FontAttributes="Bold" Text="Fecha:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="3" Text="{Binding StorieLocal}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="4" FontAttributes="Bold" Text="Monto:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="4" Text="{Binding StoriePrice}"/>
+                        </Grid>
+                    </Frame>
+                    <BoxView BackgroundColor="Transparent" HeightRequest="5" />
                 </StackLayout>
-            </ScrollView>
-        </StackLayout>
+            </DataTemplate>
+
+            <controls:ClientTemplateSelector
+                x:Key="ClientTemplateSelector"
+                DefaultTemplate="{StaticResource ClientDefaultTemplate}"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="20,35,20,20">
+                <Label Text="Historico de Servicios"
+                   VerticalOptions="Start" 
+                   HorizontalOptions="Fill"
+                   FontSize="Medium" FontFamily="Calibri" FontAttributes="Bold"
+                   TextColor="DodgerBlue"
+                   Margin="0, 0, 0, 0"/>
+                <CollectionView ItemsSource="{Binding ListadoHistorias}"
+                                EmptyView="No Stories to display">
+                </CollectionView>
+                <microcharts:ChartView x:Name="charViewBar" HeightRequest="300"/>
+                <microcharts:ChartView x:Name="charViewPie" HeightRequest="300"/>
+                <microcharts:ChartView x:Name="charViewLine" HeightRequest="300"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

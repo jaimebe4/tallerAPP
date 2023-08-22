@@ -34,7 +34,7 @@ namespace TallerApp.Views
         private void btn_registrar_Clicked(object sender, EventArgs e)
         {
             cleanForm();
-            DisplayAlert("Vehiculo Registrado", "Haz registrado el Vehiculo", "Cerrar");
+            //DisplayAlert("Vehiculo Registrado", "Haz registrado el Vehiculo", "Cerrar");
         }
 
         private void cleanForm()
