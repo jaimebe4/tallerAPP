@@ -40,9 +40,7 @@ namespace TallerApp.Views
         public ReportsPage ()
 		{
 			InitializeComponent ();
-			charViewBar.Chart = new BarChart { Entries = entries, ValueLabelOrientation = Orientation.Horizontal, LabelTextSize = 30, AnimationProgress = 10, LabelOrientation = Orientation.Horizontal};
-            charViewPie.Chart = new PieChart { Entries = entries, LabelTextSize = 30, AnimationProgress = 10, HoleRadius = 0.3f };
-            charViewLine.Chart = new LineChart { Entries = entries, ValueLabelOrientation = Orientation.Horizontal, LabelTextSize = 30, AnimationProgress = 10, LabelOrientation = Orientation.Horizontal, LineMode = LineMode.Straight  };
+            //charViewLine.Chart = new LineChart { Entries = entries, ValueLabelOrientation = Orientation.Horizontal, LabelTextSize = 30, AnimationProgress = 10, LabelOrientation = Orientation.Horizontal, LineMode = LineMode.Straight  };
         }
 	}
 }

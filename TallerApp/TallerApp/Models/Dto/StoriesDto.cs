@@ -14,6 +14,7 @@ namespace TallerApp.Data.Models.Dto
         public string StorieLocal { get; set; }
         public long StoriePrice { get; set; }
         public String StorieNotes { get; set; }
+        public long VehicleId {get; set; }
         public string DescriVehiculo { get; set; }
         public String PlacaVehiculo { get; set; }
 

@@ -20,7 +20,7 @@ namespace TallerApp.Views
         private void btn_registrar_Clicked(object sender, EventArgs e)
         {
             cleanForm();
-            DisplayAlert("Servicio Registrado", "Haz registrado el Servicio", "Cerrar");
+            //DisplayAlert("Servicio Registrado", "Haz registrado el Servicio", "Cerrar");
         }
 
         private void cleanForm()

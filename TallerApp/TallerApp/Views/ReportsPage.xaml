@@ -20,17 +20,15 @@
                 x:Key="ClientDefaultTemplate">
                 <StackLayout>
                     <Frame CornerRadius="7" BackgroundColor="LightSteelBlue">
-                        <Grid  Margin="0" Padding="0" ColumnDefinitions="30*,70*" RowDefinitions="*,*,*,*,*">
+                        <Grid  Margin="0" Padding="0" ColumnDefinitions="18*,30*,14*,38*" RowDefinitions="*,*">
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="0" FontAttributes="Bold" Text="Fecha"/>
                             <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="0" Text="{Binding StorieDate, StringFormat='{W0:MMMM dd, yyyy}'}"/>
-                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="0" FontAttributes="Bold" Text="Fecha:"/>
-                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="1" FontAttributes="Bold" Text="Hora:"/>
-                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="1" Text="{Binding StorieHour}"/>
-                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="2" FontAttributes="Bold" Text="Tipo:"/>
-                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="2" Text="{Binding StorieType}"/>
-                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="3" FontAttributes="Bold" Text="Local:"/>
-                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="3" Text="{Binding StorieLocal}"/>
-                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="4" FontAttributes="Bold" Text="Precio:"/>
-                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="4" Text="{Binding StoriePrice}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="2" Grid.Row="0" FontAttributes="Bold" Text="Valor"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="3" Grid.Row="0" Text="{Binding StoriePrice, StringFormat='$ {0:F0}'}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="1" FontAttributes="Bold" Text="Vehiculo"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="1" Text="{Binding DescriVehiculo}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="2" Grid.Row="1" FontAttributes="Bold" Text="Tipo"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="3" Grid.Row="1" Text="{Binding StorieType}"/>
                         </Grid>
                     </Frame>
                     <BoxView BackgroundColor="Transparent" HeightRequest="5" />
@@ -44,6 +42,15 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Margin="20,35,20,20">
+                <Label Text="Gasto por Vehiculo"
+                   VerticalOptions="Start" 
+                   HorizontalOptions="Fill"
+                   FontSize="Medium" FontFamily="Calibri" FontAttributes="Bold"
+                   TextColor="DodgerBlue"
+                   Margin="0, 0, 0, 0"/>
+                <microcharts:ChartView x:Name="charViewBar" 
+                                       HeightRequest="300"  
+                                       Chart="{Binding BarChart}"/>
                 <Label Text="Historico de Servicios"
                    VerticalOptions="Start" 
                    HorizontalOptions="Fill"
@@ -54,9 +61,12 @@
                                 EmptyView="No Stories to display"
                                 ItemTemplate="{StaticResource ClientTemplateSelector}">
                 </CollectionView>
-                <microcharts:ChartView x:Name="charViewBar" HeightRequest="300"/>
-                <microcharts:ChartView x:Name="charViewPie" HeightRequest="300"/>
-                <microcharts:ChartView x:Name="charViewLine" HeightRequest="300"/>
+                <microcharts:ChartView x:Name="charViewPie" 
+                                       HeightRequest="300"
+                                       Chart="{Binding PieChart}"/>
+                <microcharts:ChartView x:Name="charViewLine" 
+                                       HeightRequest="300"
+                                       Chart="{Binding LineChart}"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
