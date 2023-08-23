@@ -729,3 +729,4 @@ C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\res\drawable\logotaller.jpg

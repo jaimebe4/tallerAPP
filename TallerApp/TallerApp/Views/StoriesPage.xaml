@@ -44,7 +44,6 @@
                         SelectedItem="{Binding Vehicle}">
                         </Picker>
                         <DatePicker x:Name="pkr_serviceDate"
-                                    Background="white"
                                     Date="{Binding StorieDate}"/>
                         <Entry x:Name="lbl_serviceHour"
                            Placeholder="Hora"

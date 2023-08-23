@@ -19,24 +19,23 @@
             <DataTemplate x:DataType="models:Dto.StoriesDto"
                 x:Key="ClientDefaultTemplate">
                 <StackLayout>
-                    <Frame CornerRadius="7" BackgroundColor="IndianRed">
+                    <Frame CornerRadius="7" BackgroundColor="LightSteelBlue">
                         <Grid  Margin="0" Padding="0" ColumnDefinitions="30*,70*" RowDefinitions="*,*,*,*,*">
-                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="0" Text="{Binding StorieDate}"/>
-                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="0" FontAttributes="Bold" Text="Tipo Pago:"/>
-                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="1" FontAttributes="Bold" Text="Subtipo:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="0" Text="{Binding StorieDate, StringFormat='{W0:MMMM dd, yyyy}'}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="0" FontAttributes="Bold" Text="Fecha:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="1" FontAttributes="Bold" Text="Hora:"/>
                             <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="1" Text="{Binding StorieHour}"/>
-                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="2" FontAttributes="Bold" Text="Descripción:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="2" FontAttributes="Bold" Text="Tipo:"/>
                             <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="2" Text="{Binding StorieType}"/>
-                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="3" FontAttributes="Bold" Text="Fecha:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="3" FontAttributes="Bold" Text="Local:"/>
                             <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="3" Text="{Binding StorieLocal}"/>
-                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="4" FontAttributes="Bold" Text="Monto:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="4" FontAttributes="Bold" Text="Precio:"/>
                             <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="4" Text="{Binding StoriePrice}"/>
                         </Grid>
                     </Frame>
                     <BoxView BackgroundColor="Transparent" HeightRequest="5" />
                 </StackLayout>
             </DataTemplate>
-
             <controls:ClientTemplateSelector
                 x:Key="ClientTemplateSelector"
                 DefaultTemplate="{StaticResource ClientDefaultTemplate}"/>
@@ -52,7 +51,8 @@
                    TextColor="DodgerBlue"
                    Margin="0, 0, 0, 0"/>
                 <CollectionView ItemsSource="{Binding ListadoHistorias}"
-                                EmptyView="No Stories to display">
+                                EmptyView="No Stories to display"
+                                ItemTemplate="{StaticResource ClientTemplateSelector}">
                 </CollectionView>
                 <microcharts:ChartView x:Name="charViewBar" HeightRequest="300"/>
                 <microcharts:ChartView x:Name="charViewPie" HeightRequest="300"/>
