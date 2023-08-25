@@ -11,5 +11,8 @@ namespace TallerApp.Models
         public float Valor { get; set; }
         public string CodigoColorHex { get; set; }
         public long idVehiculo { get; set; }
+
+        public string TipoServicio { get; set; }
+        public long Cantidad { get; set; }
     }
 }

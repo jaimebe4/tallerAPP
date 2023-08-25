@@ -1,4 +1,5 @@
 ﻿using TallerApp.Data.Models;
+using TallerApp.Data.Models.Dto;
 using Refit;
 using System;
 using System.Collections.Generic;
@@ -16,5 +17,7 @@ namespace TallerApp.Data.API
 
         [Post("/Stories/PostObtenerHistorias")]
         Task<HttpResponseMessage> PostObtenerHistoriasAsync();
+
+
     }
 }

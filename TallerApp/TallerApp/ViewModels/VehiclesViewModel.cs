@@ -9,6 +9,7 @@ using Xamarin.CommunityToolkit.ObjectModel;
 using Xamarin.Forms;
 using System.Threading;
 
+
 namespace TallerApp.ViewModels
 {
     public class VehiclesViewModel : BaseViewModel

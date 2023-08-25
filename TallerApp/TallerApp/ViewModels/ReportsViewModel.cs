@@ -14,6 +14,7 @@ using Microcharts;
 using SkiaSharp;
 using System.Linq;
 using TallerApp.Extensions;
+using TallerApp.Views;
 
 namespace TallerApp.ViewModels
 {
@@ -83,6 +84,20 @@ namespace TallerApp.ViewModels
                                         }).ToList();
                 }
 
+                var listadotiposservicios = await _storieService.PostObtenerHistoriasAsync();
+                List<DatosReporte> ListadoTiposServicio = new List<DatosReporte>();
+                if (listadotiposservicios != null)
+                {
+                    ListadoTiposServicio = listadotiposservicios
+                                        .GroupBy(p => p.StorieType)
+                                        .Select(DR => new DatosReporte
+                                        {
+                                            TipoServicio = DR.First().StorieType,
+                                            Cantidad = DR.Count(),
+                                            Valor = (float)DR.Sum(c => c.StoriePrice)
+                                        }).ToList();
+                }
+
                 string colorhex = string.Empty;
                 List<ChartEntry> entries = new List<ChartEntry>();
                 foreach (DatosReporte item in ListadoDatosReporte)
@@ -91,19 +106,23 @@ namespace TallerApp.ViewModels
                     switch (item.idVehiculo)
                     {
                         case 1:
-                            colorhex = ExtensionMethods.GetHexString(Xamarin.Forms.Color.Green);
+                            colorhex = "#fc4b08";
+                            //colorhex = ExtensionMethods.GetHexString(Xamarin.Forms.Color.Green);
                             break;
                         case 2:
-                            colorhex = ExtensionMethods.GetHexString(Xamarin.Forms.Color.Blue);
+                            colorhex = "#f7d547";
+                            //colorhex = ExtensionMethods.GetHexString(Xamarin.Forms.Color.Blue);
                             break;
                         case 3:
-                            colorhex = ExtensionMethods.GetHexString(Xamarin.Forms.Color.Magenta);
+                            colorhex = "#97b770";
+                            //colorhex = ExtensionMethods.GetHexString(Xamarin.Forms.Color.Magenta);
                             break;
                         case 4:
                             colorhex = ExtensionMethods.GetHexString(Xamarin.Forms.Color.Aqua);
                             break;
                         default:
-                            colorhex = ExtensionMethods.GetHexString(Xamarin.Forms.Color.Red);
+                            colorhex = "#fc4b08";
+                                //ExtensionMethods.GetHexString("fc4b08");
                             break;
 
                     }
@@ -111,6 +130,47 @@ namespace TallerApp.ViewModels
                     {
                         Label = item.Vehiculo,
                         ValueLabel = item.Valor.ToString(),
+                        Color = SKColor.Parse(colorhex)
+                    });
+                }
+
+                List<ChartEntry> entries2 = new List<ChartEntry>();
+                List<ChartEntry> entries3 = new List<ChartEntry>();
+                foreach (DatosReporte item2 in ListadoTiposServicio)
+                {
+                    colorhex = string.Empty;
+                    switch (item2.TipoServicio)
+                    {
+                        case "Reabastecimiento":
+                            colorhex = "#fc4b08";
+                            break;
+                        case "Servicio Básico":
+                            colorhex = "#f7d547";
+                            break;
+                        case "Mantenimiento":
+                            colorhex = "#97b770";
+                            break;
+                        case "Mano de Obra":
+                            colorhex = ExtensionMethods.GetHexString(Xamarin.Forms.Color.Aqua);
+                            break;
+                        case "Repuestos":
+                            colorhex = ExtensionMethods.GetHexString(Xamarin.Forms.Color.Cornsilk);
+                            break;
+                        default:
+                            colorhex = "#fc4b08";
+                            break;
+
+                    }
+                    entries2.Add(new ChartEntry(item2.Cantidad)
+                    {
+                        Label = item2.TipoServicio,
+                        ValueLabel = item2.Cantidad.ToString(),
+                        Color = SKColor.Parse(colorhex)
+                    });
+                    entries3.Add(new ChartEntry(item2.Valor)
+                    {
+                        Label = item2.TipoServicio,
+                        ValueLabel = item2.Valor.ToString(),
                         Color = SKColor.Parse(colorhex)
                     });
                 }
@@ -127,7 +187,7 @@ namespace TallerApp.ViewModels
 
                 PieChart = new PieChart
                 {
-                    Entries = entries,
+                    Entries = entries3,
                     LabelTextSize = 30,
                     HoleRadius = 0.3f,
                     AnimationProgress = 10,
@@ -136,7 +196,7 @@ namespace TallerApp.ViewModels
 
                 LineChart = new LineChart
                 {
-                    Entries = entries,
+                    Entries = entries2,
                     LabelTextSize = 30,
                     AnimationProgress = 10,
                     ValueLabelOrientation = Orientation.Horizontal,
@@ -158,6 +218,8 @@ namespace TallerApp.ViewModels
                 IsBusy = false;
             }
         }
+
+     
 
     }
 

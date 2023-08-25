@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TallerApp.Views.VehiclesListPage"
+             xmlns:viewModels="clr-namespace:TallerApp.ViewModels"
+             xmlns:utility="clr-namespace:TallerApp.Helpers" 
+             utility:ViewModelLocator.AutoWireViewModel="True"
+             x:DataType="viewModels:VehiclesListViewModel"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:models="clr-namespace:TallerApp.Data.Models"
+             xmlns:controls="clr-namespace:TallerApp.Controls"
+             Title="Vehiculos">
+    <ContentPage.Behaviors>
+        <xct:EventToCommandBehavior EventName="Appearing" Command="{Binding AppearingCommand}"/>
+    </ContentPage.Behaviors>
+    <ContentPage.Resources>
+        <ResourceDictionary >
+            <DataTemplate x:DataType="models:Vehicle"
+                x:Key="VehicleDefaultTemplate">
+                <StackLayout>
+                    <Frame CornerRadius="7" BackgroundColor="LightSteelBlue">
+                        <Grid  Margin="0" Padding="0" ColumnDefinitions="50*,50*" RowDefinitions="*,*,*,*,*">
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.ColumnSpan="2" Grid.Row="0" FontAttributes="Bold,Italic" TextDecorations="Underline" FontSize="19" Text="{Binding VehicleName}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="1" FontAttributes="Bold" Text="Tipo Vehiculo:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="1" Text="{Binding VehicleType}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="2" FontAttributes="Bold" Text="Marca:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="2" Text="{Binding VehicleBrand}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="3" FontAttributes="Bold" Text="Modelo:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="3" Text="{Binding VehicleModel}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="4" FontAttributes="Bold" Text="Placa:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="4" Text="{Binding VehiclePlaque}"/>
+                        </Grid>
+                    </Frame>
+                    <BoxView BackgroundColor="Transparent" HeightRequest="5" />
+                </StackLayout>
+            </DataTemplate>
+            
+            <DataTemplate x:DataType="models:Vehicle"
+                x:Key="VehicleUltimoModeloTemplate">
+                <StackLayout>
+                    <Frame CornerRadius="7" BackgroundColor="#99e89d">
+                        <Grid  Margin="0" Padding="0" ColumnDefinitions="50*,50*" RowDefinitions="50,*,*,*,*">
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="0" FontAttributes="Bold,Italic" TextDecorations="Underline" FontSize="19" Text="{Binding VehicleName}"/>
+                            <Image VerticalOptions="End" HorizontalOptions="End" Margin="0" Grid.Column="1" Grid.Row="0" Source="modern_car.png" WidthRequest="42" BackgroundColor="Transparent"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="1" FontAttributes="Bold" Text="Tipo Vehiculo:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="1" Text="{Binding VehicleType}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="2" FontAttributes="Bold" Text="Marca:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="2" Text="{Binding VehicleBrand}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="3" FontAttributes="Bold" Text="Modelo:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="3" Text="{Binding VehicleModel}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="4" FontAttributes="Bold" Text="Placa:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="4" Text="{Binding VehiclePlaque}"/>
+                        </Grid>
+                    </Frame>
+                    <BoxView BackgroundColor="Transparent" HeightRequest="5" />
+                </StackLayout>
+            </DataTemplate>
+
+            <DataTemplate x:DataType="models:Vehicle"
+                x:Key="VehicleModernoTemplate">
+                <StackLayout>
+                    <Frame CornerRadius="7" BackgroundColor="#ffff72">
+                        <Grid  Margin="0" Padding="0" ColumnDefinitions="50*,50*" RowDefinitions="50,*,*,*,*">
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="0" FontAttributes="Bold,Italic" TextDecorations="Underline" FontSize="19" Text="{Binding VehicleName}"/>
+                            <Image Margin="0" HorizontalOptions="End" Grid.Column="1" Grid.Row="0" Source="actual_car.png" WidthRequest="50" BackgroundColor="Transparent"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="1" FontAttributes="Bold" Text="Tipo Vehiculo:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="1" Text="{Binding VehicleType}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="2" FontAttributes="Bold" Text="Marca:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="2" Text="{Binding VehicleBrand}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="3" FontAttributes="Bold" Text="Modelo:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="3" Text="{Binding VehicleModel}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="4" FontAttributes="Bold" Text="Placa:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="4" Text="{Binding VehiclePlaque}"/>
+                        </Grid>
+                    </Frame>
+                    <BoxView BackgroundColor="Transparent" HeightRequest="5" />
+                </StackLayout>
+            </DataTemplate>
+
+            <DataTemplate x:DataType="models:Vehicle"
+                x:Key="VehicleClasicoTemplate">
+                <StackLayout>
+                    <Frame CornerRadius="7" BackgroundColor="#ff7676">
+                        <Grid  Margin="0" Padding="0" ColumnDefinitions="50*,50*" RowDefinitions="50,*,*,*,*">
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="0" FontAttributes="Bold,Italic" TextDecorations="Underline" FontSize="19" Text="{Binding VehicleName}"/>
+                            <Image Margin="0" HorizontalOptions="End" Grid.Column="1" Grid.Row="0" Source="clasic_car.png" WidthRequest="50"  BackgroundColor="Transparent"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="1" FontAttributes="Bold" Text="Tipo Vehiculo:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="1" Text="{Binding VehicleType}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="2" FontAttributes="Bold" Text="Marca:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="2" Text="{Binding VehicleBrand}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="3" FontAttributes="Bold" Text="Modelo:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="3" Text="{Binding VehicleModel}"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="4" FontAttributes="Bold" Text="Placa:"/>
+                            <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="4" Text="{Binding VehiclePlaque}"/>
+                        </Grid>
+                    </Frame>
+                    <BoxView BackgroundColor="Transparent" HeightRequest="5" />
+                </StackLayout>
+            </DataTemplate>
+            <controls:VehiclesTemplateSelector
+                x:Key="VehiclesTemplateSelector"
+                DefaultTemplate="{StaticResource VehicleDefaultTemplate}"
+                UltimoModeloTemplate="{StaticResource VehicleUltimoModeloTemplate}"
+                ModernoTemplate="{StaticResource VehicleModernoTemplate}"
+                ClasicoTemplate="{StaticResource VehicleClasicoTemplate}"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="20,35,20,20">
+                <CollectionView ItemsSource="{Binding ListadoVehiculos}"
+                                EmptyView="No Vehicles to display"
+                                ItemTemplate="{StaticResource VehiclesTemplateSelector}">
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

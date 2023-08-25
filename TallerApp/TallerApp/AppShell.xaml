@@ -92,8 +92,11 @@
     <FlyoutItem Title="Clientes" Icon="icon_about.png">
         <ShellContent Route="ClientsPage" ContentTemplate="{DataTemplate local:ClientsPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Vehiculos" Icon="icon_vehicle.png">
+    <FlyoutItem Title="Registro Vehiculo" Icon="icon_vehicle.png">
         <ShellContent Route="VehiclesPage" ContentTemplate="{DataTemplate local:VehiclesPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Lista Vehiculos" Icon="icon_vehicles.png">
+        <ShellContent Route="VehiclesListPage" ContentTemplate="{DataTemplate local:VehiclesListPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Servicios" Icon="icon_service.png">
         <ShellContent Route="StoriesPage" ContentTemplate="{DataTemplate local:StoriesPage}" />

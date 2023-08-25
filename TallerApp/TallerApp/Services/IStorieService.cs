@@ -11,5 +11,6 @@ namespace TallerApp.Services
     {
         Task<List<StoriesDto>> PostObtenerHistoriasAsync();
         Task<Int64> PostCrearHistoriaAsync(Storie storie);
+
     }
 }

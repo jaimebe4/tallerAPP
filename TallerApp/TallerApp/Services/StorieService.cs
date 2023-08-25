@@ -66,6 +66,5 @@ namespace TallerApp.Services
             return listaStories;
         }
 
-
     }
 }

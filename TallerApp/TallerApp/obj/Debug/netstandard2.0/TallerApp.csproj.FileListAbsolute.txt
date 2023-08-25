@@ -21,3 +21,4 @@ C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\TallerApp.dll
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\refint\TallerApp.dll
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\TallerApp.pdb
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp\obj\Debug\netstandard2.0\Views\VehiclesListPage.xaml.g.cs

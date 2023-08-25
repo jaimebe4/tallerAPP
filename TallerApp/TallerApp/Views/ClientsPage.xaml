@@ -9,7 +9,8 @@
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              
              x:Class="TallerApp.Views.ClientsPage"
-             Padding="10,10">
+             Padding="10,10"
+             Title="Clientes">
     <ContentPage.Behaviors>
         <xct:EventToCommandBehavior EventName="Appearing" Command="{Binding AppearingCommand}"/>
     </ContentPage.Behaviors>
@@ -91,9 +92,9 @@
                         </Grid>
                     </CollectionView.Header>
                 </CollectionView >
-                </StackLayout>
-                <!--Loading Indicator-->
-                <ActivityIndicator IsRunning="{Binding IsBusy}" VerticalOptions="Center"/>
+            </StackLayout>
+            <!--Loading Indicator-->
+            <ActivityIndicator IsRunning="{Binding IsBusy}" VerticalOptions="Center"/>
         </Grid>
 
     </ContentPage.Content>

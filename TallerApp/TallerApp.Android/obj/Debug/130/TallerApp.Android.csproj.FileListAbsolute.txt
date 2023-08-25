@@ -730,3 +730,7 @@ C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\res\drawable\logotaller.jpg
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\res\drawable\icon_vehicles.png
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\res\drawable\clasic_car.png
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\res\drawable\actual_car.png
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPP\TallerApp\TallerApp.Android\obj\Debug\130\res\drawable\modern_car.png

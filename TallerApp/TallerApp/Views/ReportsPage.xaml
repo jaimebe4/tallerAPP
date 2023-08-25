@@ -10,7 +10,8 @@
              xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              xmlns:models="clr-namespace:TallerApp.Data.Models"
-             xmlns:controls="clr-namespace:TallerApp.Controls">
+             xmlns:controls="clr-namespace:TallerApp.Controls"
+             Title="Servicios registrados">
     <ContentPage.Behaviors>
         <xct:EventToCommandBehavior EventName="Appearing" Command="{Binding AppearingCommand}"/>
     </ContentPage.Behaviors>
@@ -19,7 +20,11 @@
             <DataTemplate x:DataType="models:Dto.StoriesDto"
                 x:Key="ClientDefaultTemplate">
                 <StackLayout>
-                    <Frame CornerRadius="7" BackgroundColor="LightSteelBlue">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:ReportsViewModel}}, Path=StorieTappedCommand}"
+                                                              CommandParameter="{Binding .}" />
+                    </StackLayout.GestureRecognizers>
+                    <Frame CornerRadius="7" BackgroundColor="#b5b5b5">
                         <Grid  Margin="0" Padding="0" ColumnDefinitions="18*,30*,14*,38*" RowDefinitions="*,*">
                             <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="0" Grid.Row="0" FontAttributes="Bold" Text="Fecha"/>
                             <Label Margin="0" Padding="0" HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="0" Text="{Binding StorieDate, StringFormat='{W0:MMMM dd, yyyy}'}"/>
@@ -61,9 +66,23 @@
                                 EmptyView="No Stories to display"
                                 ItemTemplate="{StaticResource ClientTemplateSelector}">
                 </CollectionView>
+                <!--Loading Indicator-->
+                <ActivityIndicator IsRunning="{Binding IsBusy}" VerticalOptions="Center"/>
+                <Label Text="Gastos por Tipo de Servicio"
+                   VerticalOptions="Start" 
+                   HorizontalOptions="Fill"
+                   FontSize="Medium" FontFamily="Calibri" FontAttributes="Bold"
+                   TextColor="DodgerBlue"
+                   Margin="0, 0, 0, 0"/>
                 <microcharts:ChartView x:Name="charViewPie" 
                                        HeightRequest="300"
                                        Chart="{Binding PieChart}"/>
+                <Label Text="Cantidad de Tipo de Servicio"
+                   VerticalOptions="Start" 
+                   HorizontalOptions="Fill"
+                   FontSize="Medium" FontFamily="Calibri" FontAttributes="Bold"
+                   TextColor="DodgerBlue"
+                   Margin="0, 0, 0, 0"/>
                 <microcharts:ChartView x:Name="charViewLine" 
                                        HeightRequest="300"
                                        Chart="{Binding LineChart}"/>
